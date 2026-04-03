@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --text2: #6e6e73;
+      --border: #d2d2d7;
+      --accent: #0071e3;
+      --surface: #f5f5f7;
+      --radius: 12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #f5f5f7;
+        --text2: #a1a1a6;
+        --border: #2d2d2d;
+        --accent: #2997ff;
+        --surface: #1c1c1e;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    header .inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, #34aadc 0%, #0071e3 100%);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-mark svg { width: 20px; height: 20px; fill: white; }
+    .logo-text {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .page-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--text2);
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--text);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 16px;
+      color: var(--text2);
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 0 0 16px 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      font-size: 16px;
+      color: var(--text2);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .callout p {
+      margin: 0;
+      font-size: 15px;
+    }
+    .callout strong {
+      color: var(--text);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .faq-a {
+      font-size: 15px;
+      color: var(--text2);
+      margin: 0;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="logo-mark">
+      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 2.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 10.5c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08A7.24 7.24 0 0110 15z"/>
+      </svg>
+    </div>
+    <span class="logo-text">castlewong</span>
+  </div>
+</header>
+
+<main>
+  <div class="page-label">Help</div>
+  <h1>Support</h1>
+  <div class="meta">We're here to help &nbsp;·&nbsp; Response within 1–2 business days</div>
+
+  <div class="callout">
+    <p><strong>Quick tip:</strong> Most issues can be resolved by closing and reopening the app, or restarting your device. If a problem persists, please reach out via GitHub and we'll get back to you promptly.</p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">The app is not behaving as expected. What should I do?</p>
+    <p class="faq-a">Try force-quitting the app and relaunching it. If the issue continues, restart your device. If it still persists after that, please open a GitHub issue with a brief description of what happened.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I restore my in-app purchases?</p>
+    <p class="faq-a">Open the app, go to the settings or upgrade screen, and tap <strong>Restore Purchases</strong>. Make sure you are signed in to the same Apple ID used for the original purchase. Purchases are tied to your Apple ID and can be restored on any device you own.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">I was charged but the purchase is not showing as active.</p>
+    <p class="faq-a">First try restoring purchases as described above. If that does not resolve the issue, please contact Apple Support directly at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> — they handle all billing and payment questions. We are not able to issue refunds directly.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I cancel a subscription?</p>
+    <p class="faq-a">Subscriptions are managed by Apple. To cancel, go to <strong>Settings → [your name] → Subscriptions</strong> on your iPhone or iPad, find the subscription, and tap <strong>Cancel Subscription</strong>. Cancellation takes effect at the end of the current billing period.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Will my data be lost if I delete the app?</p>
+    <p class="faq-a">All data is stored locally on your device. If you have iCloud sync enabled, your data is also backed up to your private iCloud account and can be restored when you reinstall the app. If iCloud sync is off, deleting the app will remove local data.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I delete all my data?</p>
+    <p class="faq-a">To remove all local data, simply delete the app from your device. If iCloud sync is enabled, you can also go to <strong>Settings → [your name] → iCloud → Manage Account Storage</strong>, find the app, and delete its iCloud data from there.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Does the app collect any personal information?</p>
+    <p class="faq-a">No. Our apps do not collect, store, or transmit any personal data to any external server. Please see our <a href="index.html">Privacy Policy</a> for full details.</p>
+  </div>
+
+  <h2>Contact Us</h2>
+  <p>If your question is not answered above, please open an issue on GitHub. Include your iOS version, device model, and a description of the problem so we can help you as quickly as possible.</p>
+
+  <div class="callout">
+    <p><strong>GitHub Issues:</strong> <a href="https://github.com/castlewong" target="_blank" rel="noopener">github.com/castlewong</a></p>
+  </div>
+
+  <h2>System Requirements</h2>
+  <ul>
+    <li>iOS 16.0 or later</li>
+    <li>Compatible with iPhone and iPad</li>
+    <li>iCloud account required for sync features</li>
+  </ul>
+</main>
+
+<footer>
+  &copy; 2026 castlewong &nbsp;·&nbsp;
+  <a href="index.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://github.com/castlewong" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+</body>
+</html>
